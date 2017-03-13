@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<!--fonts-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+<!-- for-mobile-apps -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<style>
+    figcaption a{
+        position: absolute;
+        right: -6em;
+    }
+    .effect-sadie figcaption a{
+        top:0.5em;right: 1em;
+    }
+    @media(max-width:1440px){
+        .side-viwer{
+            width: 20%;
+            left: 7rem;
+        }
+        .cl-effect-1 {
+            display: block;
+        }
+        .side-viwer h1 {
+            font-size: 3em;
+        }
+        .effect-lily figcaption p{
+            color:#333;
+        }
+        .effect-sadie figcaption p{
+            top:0;right: 1em;
+        }
+        .effect-honey figcaption a{
+            top: -2em;right:1em;
+        }
+        .effect-layla figcaption{
+            position: absolute;top: -.5em;
+        }
+        .effect-layla figcaption a{
+            top: 9em;left: 11.5em;
+        }
+        .effect-zoe figcaption a{
+            top: -1.8em;right: 1em;
+        }
+        .effect-oscar figcaption{
+            position: absolute;top: -1em;
+        }
+        .effect-oscar figcaption a{
+            right: 1em;
+        }
+        .effect-marley figcaption{
+            top: -3em;
+            width: 100%;
+        }
+        figure.effect-marley p {
+            bottom: -10em;
+        }
+        .effect-ruby figcaption{
+            top: 0em;
+            width: 100%;
+        }
+        .effect-marley figcaption a {
+            position: absolute;
+            right: 0em;
+            top: 9em;
+        }
+        .effect-ruby figcaption a {
+            position: absolute;
+            right: 1em;
+            top: 7em;
+        }
+        .effect-roxy figcaption{
+            position: absolute;
+            right: 1em;
+            top:0em;
+        }
+        figure.effect-roxy h2 {
+            padding: 0;
+            font-size: 1.72em;
+        }
+        figure.effect-roxy p{
+            width: 120%;
+        }
+        figure.effect-roxy a{
+            right:0;
+            top:9em;
+        }
+
+    }
+    @media(max-width:1024px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .side-viwer h1 {
+            font-size: 1.8em;
+            margin-top: 2rem;
+        }
+        .cl-effect-1 {
+            display: block;
+        }
+        .team-grid-left {
+            width:23%;
+            float: left;
+        }
+        .moments{
+            width: 92%;
+            padding: 1em 1em 0 1em;
+            top: 27em;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+    }
+    @media(max-width:768px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .team-grid-left {
+            width: 45%;
+            float: left;
+        }
+        .gird {
+            display: block;
+        }
+        figure {
+            width: 100%;
+            margin: 1.5em 0;
+        }
+        .effect-sadie figcaption{
+            bottom: -8.5em;
+        }
+        figure.effect-honey h2 {
+            bottom: 1em;
+        }
+        figure.effect-layla h2 {
+            padding-top: 10%;
+        }
+        .effect-zoe figcaption{
+            width: 100%;
+        }
+        .effect-oscar figcaption{
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media(max-width:320px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .moments{
+            top: 34em;
+        }
+        .effect-sadie figcaption a {
+            top: -2em;
+        }
+    }
+</style>
+<body>
+<div class="header">
+        <div class="container">
+            <div id="bx-wrapper" class="bx-wrapper">
+                <div class="bx-overlay"></div>
+                <div class="side-viwer slider-viwer1">
+                    <h1><a href="index.html">个人主页</a></h1>
+                    <p>我叫程淑钰，是一名前端工程师。</p>
+                    <div class="top-menu">
+                        <span class="menu"> </span>
+                        <ul>
+                            <nav class="cl-effect-1" id="cl-effect-1">
+                                <li><a class="active" href="index.html">主页</a></li>
+                                <li><a href="about.html">个人信息</a></li>
+                                <li><a href="massage.html">个人作品</a></li>
+                                <li><a href="https://cheng940906.github.io/Running-blue/run.html">RELAX</a></li>
+                                <li><a href="gallery.html">项目经验</a></li>
+                                <li><a href="contact.html">联系我</a></li>
+                            </nav>
+                        </ul>
+                    </div>
+                    <!-- script-for-menu -->
+                    <script>
+                        $("span.menu").click(function(){
+                            $(".top-menu ul").slideToggle("slow" , function(){
+                            });
+                        });
+                    </script>
+                    <!-- script-for-menu -->
+                    <div class="social-icons">
+                        <a href="#"><span class="beh"> </span></a>
+                        <a href="#"><span class="face"> </span></a>
+                    </div>
+                </div>
+                <div class="moments">
+                				<h3>项目经验</h3>
+                				<p style=" margin: 0.9rem 0;">This is my use of front-end technology to write some of the works.</p>
+                			<div class="moments-bottom">
+                				<div class="moments-1 gird">
+                                    <figure class="effect-lily">
+                                        <img src="img/1.jpg" alt="img01"/>
+                                        <figcaption>
+                                            <h2>新闻<span>App</span></h2>
+                                            <p>运用nodeJs爬虫技术</p>
+                                            <a href="http://cheng94.duapp.com/">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-sadie">
+                                        <img src="img/2.jpg" alt="img02"/>
+                                        <figcaption>
+                                            <h2>晟琅博通<span>网站</span></h2>
+                                            <p>企业管理咨询宣传网站.</p>
+                                            <a href="http://www.tytuozhan.com/" >View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-honey">
+                                        <img src="img/3.jpg" alt="img07"/>
+                                        <figcaption>
+                                            <h2>太原罗亚婚纱<span>网站</span> <i>Now</i></h2>
+                                            <a href="http://www.sxroyal.com/">View more</a>
+                                        </figcaption>
+                                    </figure>
+                					<div class="clearfix"> </div>
+                				</div>
+                                <div class="moments-1 gird">
+                                    <figure class="effect-layla" >
+                                        <img src="img/4.jpg" alt="img04"/>
+                                        <figcaption>
+                                            <h2>伴游天下<span>网站</span></h2>
+                                            <p>为外出旅游的人提供的一个平台.</p>
+                                            <a href="http://121.40.249.173:8169/">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-zoe">
+                                        <img src="img/5.jpg" alt="img14"/>
+                                        <figcaption>
+                                            <h2>亿富鼎<span>商城</span></h2>
+                                            <span class="icon-heart"></span>
+                                            <span class="icon-eye"></span>
+                                            <span class="icon-paper-clip"></span>
+                                            <p>购物网站.</p>
+                                            <a href="http://www.szyfdvip.cn/ ">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-oscar">
+                                        <img src="img/6.jpg" alt="img08"/>
+                                        <figcaption >
+                                            <h2>南山文化<span>旅游</span></h2>
+                                            <p>宣传南山旅游文化的网站.</p>
+                                            <a href="http://gtuooa.duapp.com/ns-phpcms/index.php" >View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="moments-1 gird">
+                                    <figure class="effect-marley">
+                                        <img src="img/7.jpg" alt="img09"/>
+                                        <figcaption>
+                                            <h2>个人<span>博客</span></h2>
+                                            <p>技术以及心得分享.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-ruby">
+                                        <img src="img/10.jpg" alt="img10"/>
+                                        <figcaption>
+                                            <h2>暂定<span>...</span></h2>
+                                            <p>敬请期待.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-roxy">
+                                        <img src="img/3.jpg" alt="img03"/>
+                                        <figcaption>
+                                            <h2>通迅录<span>App</span></h2>
+                                            <p>运用Angular\nodeJs技术实现.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="clearfix"> </div>
+                                </div>
+                			</div>
+                    <script>
+                        // For Demo purposes only
+                        [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+                            el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+                        } );
+                    </script>
+                    <div style="display:none;">
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5032201'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D5032201%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+                        <script type="text/javascript">
+                            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7acca738c2b8551dcae59f4b9b8f6ea0' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=21826775" charset="UTF-8"></script>
+                    </div>
+                	</div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+</div>
+<div class="footer">
+		<div class="clearfix"> </div>
+</div>
+    </body>
+</html>

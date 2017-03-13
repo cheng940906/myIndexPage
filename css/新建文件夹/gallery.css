@@ -1,0 +1,39 @@
+figure{
+    position: relative;
+}
+figcaption{
+    top:2em;
+    position: absolute;
+}
+figcaption h2{
+   padding:0  .5em ;
+   font-size:1.8em;
+}
+figure:hover figcaption{
+
+}
+figcaption p{
+    position: absolute;
+    color: #666;
+    font-size: 1.2em;
+    margin: 9px 0 11px 5px;
+    padding-left: 1.2rem;
+    text-align: left;
+    opacity: 0;
+    color:#FFFFFF;
+}
+@media screen and (max-width:1440px){
+    figure:hover figcaption h2{
+       font-size:1.8em;
+       color:#FFFFFF;
+    }
+    figure:hover figcaption p{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:320px){
+
+}

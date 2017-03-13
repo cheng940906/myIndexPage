@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<!--fonts-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- //for-mobile-apps -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<style>
+    @media(max-width:1440px){
+        .side-viwer{
+            width: 20%;
+            left: 7rem;
+        }
+        .cl-effect-1 {
+            display: block;
+        }
+        .side-viwer h1 {
+            font-size: 3em;
+        }
+    }
+    @media(max-width:1024px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .side-viwer h1 {
+            font-size: 1.8em;
+            margin-top: 2rem;
+        }
+        .cl-effect-1 {
+            display: block;
+        }
+        .team-grid-left {
+            width:23%;
+            float: left;
+        }
+        .contact{
+            width: 92%;
+            padding: 1em 1em 0 1em;
+            top: 27em;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+    }
+    @media(max-width:768px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .team-grid-left {
+            width: 45%;
+            float: left;
+        }
+    }
+    @media(max-width:320px){
+        .side-viwer{
+            width:100%;
+            left:0rem;
+        }
+        .contact{
+            top: 34em;
+        }
+        .contact-form input[type="text"] {
+            width: 100%;
+        }
+        .contact-form input[type="email"] {
+            width: 100%;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+    <body>
+<div class="header">
+        <div class="container">
+            <div id="bx-wrapper" class="bx-wrapper">
+                <div class="bx-overlay"></div>
+                <div class="side-viwer slider-viwer1">
+                                 <h1><a href="index.html">个人主页</a></h1>
+                                 <p>这是一份关于我生活经历、工作经验的个人主页.</p>
+                                 <div class="top-menu">
+                                     <span class="menu"> </span> 
+                                     <ul>
+                                        <nav class="cl-effect-1" id="cl-effect-1">
+                                         <li><a class="active" href="index.html">主页</a></li>
+                                         <li><a href="about.html">个人信息</a></li>
+                                         <li><a href="massage.html">个人作品</a></li>
+                                         <li><a href="https://cheng940906.github.io/Running-blue/run.html">RELAX</a></li>
+                                         <li><a href="gallery.html">项目经验</a></li>
+                                         <li><a href="contact.html">联系我</a></li>
+                                         </nav>
+                                     </ul>
+                                 </div>
+                                 <div class="social-icons">
+                                    <a href="#"><span class="beh"> </span></a>
+                                    <a href="#"><span class="face"> </span></a>          
+                                 </div>
+                </div>       
+            		<div class="contact">
+            						<h3>留下足迹</h3>
+            			<div class="map">
+            				<h4>请@我:</h4>
+                            <div></div>
+
+            			</div>	
+            			<div class="contact-form">
+            				<h4>@你的信息</h4>
+            				<form>
+            					<input type="text" value="名字" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '名字';}" required="">
+            					<input type="email" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}" required="">
+            					<input type="text" value="标题" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '标题';}" required="">
+            					<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '内容';}" required="">内容</textarea>
+            					<button class="btn1 btn-1 btn-1b">发布</button>
+            				</form>
+            			</div>	
+            		</div>
+
+		</div>
+
+</div>
+<div class="clearfix"> </div>
+<div class="footer">
+		<div class="clearfix"> </div>
+</div>
+    </body>
+</html>
