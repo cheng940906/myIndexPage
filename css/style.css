@@ -914,6 +914,12 @@ figure img{
         height: 150px;
         padding-left:20px;
     }
+    .bx-thumbs {
+        z-index: 999;
+        text-align: center;
+        padding: 5rem 9rem;
+        right: 220px;
+    }
     .side-viwer[title=index]{
           width:100%;
           left:0;
@@ -1100,7 +1106,7 @@ figure img{
     .bx-thumbs {
         z-index: 999;
         text-align: center;
-        padding: 5rem 11rem;
+        padding: 5rem 9rem;
         right: 220px;
     }
 	.about {
@@ -1698,7 +1704,7 @@ figure img{
 	  top: 30%;
 	}
 	.bx-overlay {
-	  height: 69%;
+	  height: 100%;
 	}
 	.bx-thumbs {
 	   display: none;

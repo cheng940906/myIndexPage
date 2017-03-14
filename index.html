@@ -12,12 +12,30 @@
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/index.js"></script>
 </head>
+<style>
+	.side-viwer{
+		width:100%;
+		left:0rem;
+		height:100%;
+	}
+
+	@media(max-width:1024px){
+		.bx-thumbs .ball a {
+			float: left;
+			width: 80px;
+			height: 80px;
+			left: 0rem;
+		}
+
+
+		}
+</style>
     <body>
 <div class="header">
         <div class="container">
             <div id="bx-wrapper" class="bx-wrapper">
                 <div class="bx-overlay"> </div>
-				    <div style="width: 100%;" class="side-viwer slider-viwer1">
+				    <div class="side-viwer slider-viwer1">
 			             <h1><a href="index.html">个人主页</a></h1>
 			             <p>我叫程淑钰，是一名前端工程师。</p>
 			             <div class="top-menu">
